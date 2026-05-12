@@ -7,7 +7,6 @@ public partial class MainPage : ContentPage
     double x = 0;
     public MainPage()
     {
-        x = 200;
         InitializeComponent();
         Accelerometer.Default.ReadingChanged += Accelerometer_ReadingChanged;
         Accelerometer.Default.Start(SensorSpeed.Game);
@@ -31,8 +30,13 @@ public partial class MainPage : ContentPage
         Player.TranslationY = Math.Sin(Environment.TickCount64 * 0.005) * 10 - 40;
     }
 
+    void MovePtak()
+    {
+        Ptak.TranslationX = -160;   
+    }
     private void Update(object sender, EventArgs e)
     {
         MovePlayer();
+        MovePtak();
     }
 }
