@@ -1,9 +1,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.MainPage">
-    <Grid>
-        <Image BackgroundColor="Aquamarine"  x:Name="Player" WidthRequest="50" HeightRequest="50" Margin="0,0,0,0"></Image>
-        
+    <Grid BackgroundColor="PowderBlue">
+        <Image BackgroundColor="Red"  x:Name="Player" WidthRequest="50" HeightRequest="50" Margin="0,0,0,0"></Image>
+        <Image BackgroundColor="Black"  x:Name="Ptak" WidthRequest="110" HeightRequest="50" Margin="0,0,0,0"></Image>
     </Grid>
     
 </ContentPage>
